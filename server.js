@@ -22,6 +22,22 @@ function regexCheck(id, res) {
   return /^[0-9]{1,5}$/.test(id);
 }
 
+function inputCheck(id, res) {
+    console.log("Input Checker Reached");
+  
+    if (regexCheck(id, res)) {
+      console.log("Regex passed, fizzbuzz case checker started");
+      fizzbuzzCaseChecker(id, res);
+    } else {
+      console.log(
+        "Regex Failed :Please enter a positive whole number up to 5 digits"
+      );
+      res.send(
+        "Regex Failed :Please enter a positive whole number up to 5 digits"
+      );
+    };
+  };
+
 function fizzbuzzCaseChecker(id, res) {
   console.log("fizzbuzzCaseChecker Reached");
   switch (true) {
@@ -52,6 +68,8 @@ app.get("/", function (req, res) {
 app.get("/Fizzbuzz", function (req, res) {
   res.send("CandleScience Test Started");
 });
+
+
 
 // express listener
 app.listen(PORT, function () {
