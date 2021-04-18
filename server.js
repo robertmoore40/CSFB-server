@@ -69,7 +69,14 @@ app.get("/Fizzbuzz", function (req, res) {
   res.send("CandleScience Test Started");
 });
 
-
+app.get("/Fizzbuzz/:id", function (req, res) {
+    var id = req.params.id;
+    console.log("New Input Detected");
+    console.log("__________");
+    console.log(id + " is the accepted parameter");
+    id = parseInt(id);
+    inputCheck(id, res);
+  });
 
 // express listener
 app.listen(PORT, function () {
