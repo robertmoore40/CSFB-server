@@ -1,0 +1,22 @@
+{
+  "name": "csfb-server",
+  "version": "1.0.0",
+  "description": "CandleScience FizzBuzz server test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertmoore40/CSFB-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertmoore40/CSFB-server/issues"
+  },
+  "homepage": "https://github.com/robertmoore40/CSFB-server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
