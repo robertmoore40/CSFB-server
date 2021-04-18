@@ -19,7 +19,16 @@ console.log("Fizzbuzz number is " + numFizzBuzz);
 
 function regexCheck(id, res) {
   console.log("Regex Function Reached");
-  return /^[0-9]{1,5}$/.test(id);
+  // return /^[0-9]{1,5}$/.test(id);
+  return /^\d{1,5}$/.test(id);
+  
+// current issues
+// 315asd returns true
+// 15.5 returns true
+
+  // return /^\d+$/.test(id);
+  // Whole number checker
+
 }
 
 function inputCheck(id, res) {
