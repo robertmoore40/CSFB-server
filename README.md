@@ -8,7 +8,7 @@ CandleScience FizzBuzz server test
 
 3) run npm init in local files
 
-4) run npm install express to verify express is downloaded
+4) run npm install and npm install express to verify express is downloaded
 
 5) run node .\server.js
 
