@@ -14,4 +14,4 @@ CandleScience FizzBuzz server test
 
 6) go to http://localhost:3000/fizzbuzz/id
 
-7) replace id with a whole number less than 100000
+7) replace id with a positive counting number less than 100000
